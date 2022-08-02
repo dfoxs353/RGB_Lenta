@@ -2,7 +2,7 @@
 import serial
 
 if __name__ == '__main__':
-    ser = serial.Serial('ttyUSB0', 9600, timeout=1)
+    ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
     ser.flush()
 
     while True:
