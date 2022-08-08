@@ -26,6 +26,7 @@ def runServer():
     inputSocket, address=serverSocket.accept()
     print ("Got connection with" , address)
     data=inputSocket.recv(1024)
+
     print ("received [%s] \n " % data)
     inputSocket.close()
     serverSocket.close()
